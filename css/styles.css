@@ -1,0 +1,22 @@
+@font-face {
+	font-family: norse-font;
+	src: url(../assets/Norse-Bold.otf);
+}
+
+body {
+	font-family: norse-font, system-ui, sans-serif;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+.img {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	margin: 1% 1% 1% 1%;
+	background: url(../assets/mehdi-messro.jpg) no-repeat center;
+	background-size: cover;
+}
