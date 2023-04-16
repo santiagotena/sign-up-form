@@ -3,10 +3,9 @@
 	src: url(../assets/Norse-Bold.otf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
-
 body {
-	font-family: 'Josefin Slab', serif, system-ui;
+	font-family: Helvetica, sans-serif, system-ui;
+	font-weight: 200;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -23,9 +22,13 @@ a {
 button {
 	background-color: rgb(188, 197, 206);
 	border-radius: 5px;
+	border: 0;
 }
 input {
+	height: 20px;
+	width: 200px;
 	border-radius: 5px;
+	border: 1px solid black;
 }
 
 .img {
@@ -36,66 +39,77 @@ input {
 	height: 100%;
 	background: url(../assets/mehdi-messro.jpg) no-repeat center;
 	background-size: cover;
-	border-radius: 2px;
 }
 .logo-container {
-	/* display: flex; */
-	/* justify-content: start; */
-}
-.logo {
-	width: 20%;
-	height: 20%;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
 	padding: 15px;
-}
+}	
 .valhalla {
 	color: white;
 	font-family: norse-font;
+	font-size: xx-large;
+	padding: 10px;
+	align-self: center;
 }
 .img-description {
 	margin-top: auto;
 	margin-bottom: 20px;
 	font-size: 100%;
 	color: white;
-	font-weight: 500;
+	font-weight: 100;
 }
 
 .info {
 	width: 60%;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 .info-header,
 .info-form,
 .info-submit {
 	height: 33%;
 	width: 100%;
-	padding-left: 20px;
+	padding-left: 25px;
 }
-
 .info-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
+	font-size: larger;
+}
+.info-header h1 {
+	padding-bottom: 50px;
+	font-weight: 600;
 }
 
 .info-form {
 	background-color: white;
+	padding-top: 20px;
 }
-.flex-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-content: flex-end;
+.info-form form {
+	height: inherit;
 }
-
 .flex-form h1,
 .name-input,
 .contact-info,
 .password-input {
+	height: 100%;
 	display: flex;
-	height: 50px;
+	align-items: center;
 }
+.name-input,
+.contact-info,
+.password-input {
+	font-size: small;
+	font-weight: 500;
+}
+.second-column {
+	padding-left: 50px;
+}
+
+
 input:focus {
 	border: 1px solid blue;
 }

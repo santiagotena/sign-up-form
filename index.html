@@ -7,9 +7,6 @@
 	<title>Sign-up Form</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="img">
@@ -33,52 +30,50 @@
 	<div class="info">
 		<div class="info-header">
 			<h1>
-				Welcome to Valhalla!<br>
+				Welcome to Valhalla!<br> <br>
 				Sign up <span class="italics">now</span> to get started.
 			</h1>
 		</div>
 		<div class="info-form">
 			<form action="">
-				<div class="flex-form">
-					<h1>Let's do this!</h1>
-					<div class="name-input">
-						<span>
-							<label for="first-name">FIRST NAME* <br></label>
-							<input type="text" name="first-name" id="first-name" required>
-						</span>
-						<span>
-							<label for="last-name">LAST NAME* <br></label>
-							<input type="text" name="last-name" id="last-name" required>
-						</span>
-					</div>
-					<div class="contact-info">
-						<span>
-							<label for="email">EMAIL* <br></label>
-							<input type="email" name="email" id="email" required>
-						</span>
-						<span>
-							<label for="phone">PHONE NUMBER <br></label>
-							<input type="tel" name="phone" id="phone">
-						</span>
-					</div>
-					<div class="password-input">
-						<span>
-							<label for="password">PASSWORD* <br></label>
-							<input type="password" name="password" id="password" required>
-						</span>
-						<span>
-							<label for="password_confirm">CONFIRM PASSWORD* <br></label>
-							<input type="password" name="password_confirm" id="password_confirm" required>
-						</span>
+				<h1>Let's do this!</h1>
+				<div class="name-input">
+					<span>
+						<label for="first-name">FIRST NAME* <br></label>
+						<input type="text" name="first-name" id="first-name" required>
+					</span>
+					<span class="second-column">
+						<label for="last-name">LAST NAME* <br></label>
+						<input type="text" name="last-name" id="last-name" required>
+					</span>
+				</div>
+				<div class="contact-info">
+					<span>
+						<label for="email">EMAIL* <br></label>
+						<input type="email" name="email" id="email" required>
+					</span>
+					<span class="second-column">
+						<label for="phone">PHONE NUMBER <br></label>
+						<input type="tel" name="phone" id="phone">
+					</span>
+				</div>
+				<div class="password-input">
+					<span>
+						<label for="password">PASSWORD* <br></label>
+						<input type="password" name="password" id="password" required>
+					</span>
+					<span class="second-column">
+						<label for="password_confirm">CONFIRM PASSWORD* <br></label>
+						<input type="password" name="password_confirm" id="password_confirm" required>
+					</span>
+				</div>
+				<div class="info-submit">
+					<button type="submit">Create Account</button>
+					<div class="log-in">
+						Already have an account? <a href=""> Log in</a>
 					</div>
 				</div>
 			</form>
-		</div>
-		<div class="info-submit">
-			<button type="submit">Create Account</button>
-			<div class="log-in">
-				Already have an account? <a href=""> Log in</a>
-			</div>
 		</div>
 	</div>
 </body>
