@@ -11,36 +11,94 @@ body {
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-	flex-direction: row;
-	background-color: white;
+	background-color: rgb(240,240,240);
 }
 .italics {
 	font-style: italic;
 }
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+button {
+	background-color: rgb(188, 197, 206);
+	border-radius: 5px;
+}
+input {
+	border-radius: 5px;
+}
+
 .img {
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 40%;
 	height: 100%;
 	background: url(../assets/mehdi-messro.jpg) no-repeat center;
 	background-size: cover;
-	/* justify-content: center; */
-	border-radius: 5px;
+	border-radius: 2px;
+}
+.logo-container {
+	/* display: flex; */
+	/* justify-content: start; */
 }
 .logo {
 	width: 20%;
 	height: 20%;
+	padding: 15px;
+}
+.valhalla {
+	color: white;
+	font-family: norse-font;
 }
 .img-description {
 	margin-top: auto;
-	margin-bottom: 10 px;
+	margin-bottom: 20px;
 	font-size: 100%;
 	color: white;
-	font-weight: 900;
+	font-weight: 500;
 }
-/* .img-info {
-	font-family: norse-font, system-ui, sans-serif;
-} */
-a {
-	color: inherit;
-	text-decoration: inherit;
+
+.info {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.info-header,
+.info-form,
+.info-submit {
+	height: 33%;
+	width: 100%;
+	padding-left: 20px;
+}
+
+.info-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+
+.info-form {
+	background-color: white;
+}
+.flex-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+
+.flex-form h1,
+.name-input,
+.contact-info,
+.password-input {
+	display: flex;
+	height: 50px;
+}
+input:focus {
+	border: 1px solid blue;
+}
+input:invalid {
+	border: 1px solid red;
 }
