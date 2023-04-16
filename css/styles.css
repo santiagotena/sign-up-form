@@ -3,8 +3,10 @@
 	src: url(../assets/Norse-Bold.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
 body {
-	font-family: norse-font, system-ui, sans-serif;
+	font-family: 'Josefin Slab', serif, system-ui;
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
@@ -12,11 +14,33 @@ body {
 	flex-direction: row;
 	background-color: white;
 }
+.italics {
+	font-style: italic;
+}
 .img {
 	display: flex;
-	width: 50%;
+	width: 40%;
 	height: 100%;
-	margin: 1% 1% 1% 1%;
 	background: url(../assets/mehdi-messro.jpg) no-repeat center;
 	background-size: cover;
+	/* justify-content: center; */
+	border-radius: 5px;
+}
+.logo {
+	width: 20%;
+	height: 20%;
+}
+.img-description {
+	margin-top: auto;
+	margin-bottom: 10 px;
+	font-size: 100%;
+	color: white;
+	font-weight: 900;
+}
+/* .img-info {
+	font-family: norse-font, system-ui, sans-serif;
+} */
+a {
+	color: inherit;
+	text-decoration: inherit;
 }
