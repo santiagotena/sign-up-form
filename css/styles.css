@@ -89,6 +89,7 @@ a {
 .info-form {
 	background-color: white;
 	padding: 25px;
+	padding-bottom: 50px;
 }
 #sign-up-form {
 	height: inherit;
@@ -124,6 +125,11 @@ input {
 	font-size: 0.7rem;
 	font-weight: 400;
 	color: red;
+}
+.success-message {
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: green;
 }
 
 .info-submit {
