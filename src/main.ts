@@ -1,15 +1,20 @@
 const password = document.querySelector("#password") as HTMLInputElement;
 const confirmPassword = document.querySelector("#confirm-password") as HTMLInputElement;
 const errorMessage = document.querySelector(".error-message");
+const successMessage = document.querySelector(".success-message");
 
-const submit = (e) => {
+const inputs = [password, confirmPassword]
+
+inputs.forEach((item):void => {
+  item.addEventListener("focusin", ():void => {
+    errorMessage.textContent = "";
+    password.classList.remove("error");
+    confirmPassword.classList.remove("error");
+  });
+});
+
+const submit = (e:Event):void => {
   e.preventDefault();
-  if (password.value !== confirmPassword.value) {
-    password.classList.add("error");
-    confirmPassword.classList.add("error");
-    errorMessage.textContent = "Passwords don't match";
-    return;
-  }
   if (password.value.length < 8) {
     password.classList.add("error");
     errorMessage.textContent =
@@ -33,7 +38,13 @@ const submit = (e) => {
     errorMessage.textContent = "Password needs to have at least 1 number.";
     return;
   }
-  errorMessage.textContent = "Form added successfully";
+  if (password.value !== confirmPassword.value) {
+    password.classList.add("error");
+    confirmPassword.classList.add("error");
+    errorMessage.textContent = "Passwords don't match";
+    return;
+  }
+  successMessage.textContent = "Form added successfully";
   setTimeout(() => {
     window.location.reload();
   }, 5000);
