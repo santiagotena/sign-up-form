@@ -3,6 +3,7 @@
 	src: url(../assets/Norse-Bold.otf);
 }
 
+/* General styling */
 body {
 	font-family: Helvetica, sans-serif, system-ui;
 	font-weight: 200;
@@ -12,28 +13,22 @@ body {
 	display: flex;
 	background-color: rgb(240,240,240);
 }
-.italics {
-	font-style: italic;
-}
 a {
 	color: inherit;
 	text-decoration: inherit;
 }
-button {
-	background-color: rgb(188, 197, 206);
-	border-radius: 5px;
-	border: 0;
+.italics {
+	font-style: italic;
 }
-input {
-	height: 20px;
-	width: 200px;
-	border-radius: 5px;
-	border: 1px solid black;
+.bold {
+	font-weight: bold;
 }
 
+/* Form image */
 .img {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	width: 40%;
 	height: 100%;
@@ -55,61 +50,100 @@ input {
 	align-self: center;
 }
 .img-description {
-	margin-top: auto;
 	margin-bottom: 20px;
-	font-size: 100%;
+	font-size: 0.8rem;
 	color: white;
 	font-weight: 100;
 }
 
+/* Form input */
 .info {
 	width: 60%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 .info-header,
 .info-form,
 .info-submit {
-	height: 33%;
-	width: 100%;
-	padding-left: 25px;
+	display: flex;
+	flex-direction: column;
+	height: 40%;
+	padding-left: 20px;
 }
+.info-form {
+	height: 20%;
+}
+
 .info-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
-	font-size: larger;
 }
 .info-header h1 {
-	padding-bottom: 50px;
-	font-weight: 600;
+	padding-bottom: 40px;
+	line-height: 1.5;
+	font-size: 1.5rem;
 }
 
 .info-form {
 	background-color: white;
-	padding-top: 20px;
+	padding: 15px;
 }
-.info-form form {
+#sign-up-form {
 	height: inherit;
-}
-.flex-form h1,
-.name-input,
-.contact-info,
-.password-input {
-	height: 100%;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+}
+#sign-up-form h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+label {
+	font-size: 0.7rem;
+	font-weight: 500;
+	color: rgb(73, 72, 72);
+}
+input {
+	height: 20px;
+	width: 200px;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 .name-input,
 .contact-info,
 .password-input {
-	font-size: small;
-	font-weight: 500;
+	display: flex;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 .second-column {
 	padding-left: 50px;
 }
 
+.info-submit {
+	padding: 15px;	
+}
+.info-submit button {
+	height: 40px;
+	width: 200px;
+	color: black;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: rgb(183, 209, 235);
+	border-radius: 5px;
+	border: solid 1px white;
+}
+.log-in {
+	margin-top: 15px;
+	font-weight: 400;
+}
+.log-in a{
+	font-weight: bold;
+	color: rgb(129, 180, 230);
+}
 
+/* Pseudoclasses */
 input:focus {
 	border: 1px solid blue;
 }
