@@ -88,7 +88,7 @@ a {
 
 .info-form {
 	background-color: white;
-	padding: 15px;
+	padding: 25px;
 }
 #sign-up-form {
 	height: inherit;
@@ -120,6 +120,11 @@ input {
 .second-column {
 	padding-left: 50px;
 }
+.error-message {
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: red;
+}
 
 .info-submit {
 	padding: 15px;	
@@ -143,10 +148,11 @@ input {
 	color: rgb(129, 180, 230);
 }
 
+.error {
+	border: 1px solid red;
+}
+
 /* Pseudoclasses */
 input:focus {
 	border: 1px solid blue;
-}
-input:invalid {
-	border: 1px solid red;
 }
