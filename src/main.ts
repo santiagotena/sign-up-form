@@ -45,7 +45,7 @@ const submit = (e:Event):void => {
     return;
   }
   successMessage.textContent = "Form added successfully";
-  setTimeout(() => {
+  setTimeout(():void => {
     window.location.reload();
   }, 5000);
 };
